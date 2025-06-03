@@ -199,19 +199,42 @@ document.addEventListener('DOMContentLoaded', () => {
                     alert('Keranjang belanja Anda masih kosong.');
                     return;
                 }
-                let messageText = 'Halo, saya ingin memesan barang berikut:\n';
-                shoppingCart.forEach((product, index) => {
-                    messageText += `${index + 1}. ${product.name} (x${product.quantity})\n`;
+
+                // Hitung ulang subtotal dan totalCost di sini agar nilainya paling update
+                // sebelum dikirim, atau pastikan updateOrderSummary() sudah terpanggil
+                // dan kita bisa ambil nilainya dari DOM atau variabel global jika ada.
+                // Untuk cara paling langsung, kita hitung di sini:
+                let subtotal = 0;
+                shoppingCart.forEach(item => {
+                    subtotal += item.price * item.quantity;
                 });
-                messageText = messageText.trim();
+
+                const shippingCost = parseFloat(shippingCostSelect.value) || 0;
+                const totalCost = subtotal + shippingCost;
+                const formattedTotalCost = formatCurrency(totalCost); // Gunakan fungsi formatCurrency yang sudah ada
+
+                let messageText = 'Halo, saya ingin memesan barang berikut:\n\n'; // Tambah baris baru untuk spasi
+                shoppingCart.forEach((product, index) => {
+                    const itemSubtotal = product.price * product.quantity;
+                    messageText += `${index + 1}. ${product.name}\n`;
+                    messageText += `   Kuantitas: ${product.quantity}\n`;
+                    messageText += `   Harga Satuan: ${formatCurrency(product.price)}\n`;
+                    messageText += `   Subtotal Item: ${formatCurrency(itemSubtotal)}\n\n`; // Tambah baris baru antar item
+                });
+                
+                messageText += `----------------------------------\n`;
+                messageText += `Subtotal Belanja: ${formatCurrency(subtotal)}\n`;
+                messageText += `Biaya Pengiriman: ${formatCurrency(shippingCost)}\n`;
+                messageText += `TOTAL BELANJA: ${formattedTotalCost}\n\n`; // TAMBAHKAN TOTAL HARGA DI SINI
+                messageText += `Terima kasih!`; // Pesan penutup opsional
+
+                // Hapus spasi ekstra di akhir jika ada sebelum encode
+                messageText = messageText.trim(); 
+
                 const encodedMessage = encodeURIComponent(messageText);
                 const whatsappUrl = `https://wa.me/${sellerWhatsAppNumber}?text=${encodedMessage}`;
+                
                 window.location.href = whatsappUrl;
-
-                // Pertimbangkan untuk mengosongkan keranjang setelah checkout berhasil
-                // shoppingCart = [];
-                // saveCart();
-                // renderCart();
             });
         }
 
