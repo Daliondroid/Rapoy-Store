@@ -1,0 +1,106 @@
+{
+  "newsItems": [
+    {
+      "imageSrc": "/homepage/img/crocs.img/crocs coklat.png",
+      "name": "Crocs Classic Clog - Beige",
+      "price": "Rp 350.000",
+      "rating": "4.9"
+    },
+    {
+      "imageSrc": "/homepage/img/crocs.img/crocs black.png",
+      "name": "Crocs Classic Clog - Black",
+      "price": "Rp 350.000",
+      "rating": "5.0"
+    },
+    {
+      "imageSrc": "/homepage/img/crocs.img/crocs lagoon (1).png",
+      "name": "Crocs Classic Clog - Dark Blue",
+      "price": "Rp 350.000",
+      "rating": "4.8"
+    },
+    {
+      "imageSrc": "/homepage/img/crocs.img/white crocs.png",
+      "name": "Crocs Classic Clog - White",
+      "price": "Rp 350.000",
+      "rating": "5.0"
+    }
+  ],
+  "recommended": [
+    {
+      "imageSrc": "/homepage/img/sepatu.img/adidas whire.jpg",
+      "name": "Adidas Campus Off White",
+      "price": "Rp 1.000.000",
+      "rating": "4.5"
+    },
+    {
+      "imageSrc": "/homepage/img/topi/topi hiaju .jpg",
+      "name": "New Era 940 Snapbcak X Boston Celtics",
+      "price": "Rp 500.000",
+      "rating": "4.2"
+    },
+    {
+      "imageSrc": "/homepage/img/sepatu.img/nike biru.jpg",
+      "name": "Air Jordan 1 Retro High OG Hyper Royal",
+      "price": "Rp 3.500.000",
+      "rating": "4.7"
+    },
+    {
+      "imageSrc": "/homepage/img/clothes.img/baju pink.heic",
+      "name": "Nike Dunk HI PRM",
+      "price": "1.200.000",
+      "rating": "4.9"
+    }
+  ],
+  "clothing": [
+    {
+      "imageSrc": "/homepage/img/clothes.img/baju pink.heic",
+      "name": "Nike Thorns Reworked Hoodie Upcycle",
+      "price": "Rp 400.000 ",
+      "rating": "4.8"
+    },
+    {
+      "imageSrc": "/homepage/img/clothes.img/baju crewneck.heic",
+      "name": "TOPTEN CREWNECK REWORKED NIGHT VISION",
+      "price": "Rp 500.000 ",
+      "rating": "4.6"
+    },
+    {
+      "imageSrc": "/homepage/img/clothes.img/baju diamond.heic",
+      "name": "Crewneck Reworked Diamond Y2K",
+      "price": "Rp 300.000",
+      "rating": "4.9"
+    },
+    {
+      "imageSrc": "/homepage/img/clothes.img/baju biru.heic",
+      "name": "Reworked Nike Hoodie Skeleton Flames",
+      "price": "Rp 1.000.000",
+      "rating": "4.7"
+    }
+  ],
+  "shoes": [
+    {
+      "imageSrc": "/homepage/img/sepatu.img/adidas whire.jpg",
+      "name": "Adidas Campus Off White",
+      "price": "Rp 1.000.000",
+      "rating": "4.5"
+    },
+    {
+      "imageSrc": "/homepage/img/sepatu.img/nike biru.jpg",
+      "name": "Air Jordan 1 Retro High OG Hyper Royal",
+      "price": "Rp 3.500.000",
+      "rating": "4.7"
+    },
+    {
+      "imageSrc": "/homepage/img/sepatu nike.png",
+      "name": "Nike Shock R4 Platinum",
+      "price": "Rp 1.500.000",
+      "rating": "4.9"
+    },
+    {
+      "imageSrc": "/homepage/img/crocs.img/crocs coklat.png",
+      "name": "Crocs Classic Clog - Beige",
+      "price": "Rp 350.000",
+      "rating": "4.9"
+    }
+  ]
+}
